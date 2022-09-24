@@ -17,7 +17,7 @@ racename, racevalue = random.choice(list(races.items()))
 bsize = random.randint(25,80)
 girth = random.randint(25,bsize)
 length = random.randint(150,450)
-xoffset = 0 - (length/2)
+xoffset = 7 - (length/2)
 
 print('Race:', racename)
 print('Ball size:',bsize)
@@ -44,7 +44,7 @@ end_fill()
 
 #shaft 1
 begin_fill()
-sety(0 - girth)
+sety(5 - girth)
 forward(length)
 end_fill()
 
@@ -61,10 +61,11 @@ forward(length)
 sety(0)
 
 #shaft fill
-setpos(length + xoffset, 0 - girth)
+setpos(length + xoffset, 4 - girth)
 setpos(length + xoffset, girth)
-setpos(xoffset,0)
+setpos(xoffset,2)
 end_fill()
+
 
 print('Complete.')
 done()
